@@ -1,0 +1,113 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    width: 500px; /* Width of the container */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+#new-task {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: cursive;
+}
+
+#add-task {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   margin-left: 10px;
+}
+
+#add-task:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fafafa;
+    margin: 10px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+li.completed {
+    color: green;
+}
+
+li.completed:before {
+    content: "✔ ";
+    color: green;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+li .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button.edit {
+    background-color: #ffc107;
+}
+
+button.complete {
+    background-color: #28a745;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Star button styles */
+button.star {
+    background-color: transparent;
+    color: #ff9800;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
